@@ -1,14 +1,36 @@
-.sample
-{
-    color: blue;
-    font-size: 24px;   
-    text-align: center;
+.sample{
+    animation: 5s downward 5 alternate-reverse;
+    
 
 }
 
-@media (max-width: 640px) {
-    .sample {
+@keyframes downward{
+    0%{
+        transform: translate(0px, 0px);
+    }
+    100%{
+        transform: translate(500px, 500px);
+    }
+}
+
+h2{
+    animation: 3s colorchange infinite;
+}
+
+@keyframes colorchange{
+    0%{
         color: red;
-        font-size: 18px;
+    }
+    25%{
+        color: blue;
+    }
+    50%{
+        color: green;
+    }
+    75%{
+        color: yellow;
+    }
+    100%{
+        color: red;
     }
 }
